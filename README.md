@@ -29,10 +29,42 @@ This is a community effort and it may take months, or even years, to recreate th
 
 ## Design Tips
 
-An easy way to reconstruct a part is to import the original STL as a mesh,
-center it, then start drawing sketches around it to capture the main
-dimensions. As you build up the part, you can hide or show the mesh
-to compare against your component, and see what else you need to do.
+An easy way to reconstruct a part is to import the original piece from the
+official Voron F3D CAD, center it, then start drawing sketches around it to
+capture the main dimensions. As you build up the part, you can hide or show the
+original body to compare against your component, and see what else you need to do.
+
+To do this:
+
+* Open the original CAD F3D file in Fusion 360.
+* Find the part you are interested in in the heirarchy view.
+* Right click, and select "Save Copy As".
+* Open the new part and make it editable. Click on the body, go to
+  MODIFY -> Align, and select the origin.
+
+Before starting work, you MUST do the following, otherwise you will find
+yourself having to start all over again:
+
+* Turn on design history: right click the top level item in the heirarchy,
+  and select "Capture Design History."
+* Create a new component: ASSEMBLE -> New Component.
+* Name the component to match the name of the part.
+* Activate the component in the heirarchy.
+* When starting your first sketch, be sure to select a plane that is
+  part of the new component, and not a face of the imported body.
+  Hiding the imported body temporarily is a good way to ensure this.
+
+While working, you can capture measurements like distances, XYZ coordinates,
+and radii, by selecting appropriate points, lines, and curves, in the original
+component, and by using the INSPECT -> Measure tool as needed.
+
+Don't forget to save your work often, since Fusion 360 can be unstable when
+used with certain graphics drivers. If you have an Nvidia graphics card
+and are running Windows, switch to the Studio driver using Geforce Experience
+(use the three dots icon at the top right of the DRIVERS tab), it is much
+more stable.
+
+Before exporting, you can delete the imported body from the heirarchy.
 
 Always follow the two golden rules of Fusion 360:
 
