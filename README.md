@@ -1,8 +1,10 @@
 # The Parametric Voron
 
-This repository contains Fusion 360 reconstructions of various printed parts from the Voron printers (https://vorondesign.com/). Unlike the CAD files provided by the Voron team, these files have full parametric design history turned on, and are easy to edit.
+This repository contains Fusion 360 reconstructions of various printed parts from the Voron printers (https://vorondesign.com/). Unlike the CAD files provided by the Voron team, which are essentially just STEP files in F3D format, these files have full parametric design history turned on, and are easy to edit.
 
 This is a community effort and it may take months, or even years, to recreate the full set of parts. If you would like to contribute, feel free to open a pull request. Parts are organized per Voron release, with the same directory structure and naming conventions used by the original Voron parts.
+
+For inspiration as to what this could eventually become, take a look at the Fusion 360 Models available for the Railcore project (https://railcore.org/). Every part is fully parametric with design history, and the parts are all linked together into a master assembly. (You will need to open in Fusion 360 directly to see the history, since the web version does not show that.)
 
 ## Design Guidelines
 
