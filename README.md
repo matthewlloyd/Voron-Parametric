@@ -37,7 +37,7 @@ for various standard parameters (all units are millimeters):
 
 | Parameter Name | Definition |
 | --- | --- |
-| chamfer | Default chamber, typically 0.4mm |
+| chamfer | Default chamfer, typically 0.4mm |
 | extrusion_width | Extrusion width |
 | panel_thickness | Panel thickness, including foam tape and VHB as needed |
 | rail_width | Linear rail width |
