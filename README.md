@@ -28,6 +28,22 @@ For inspiration as to what this could eventually become, take a look at the Fusi
 * A pair of parts that are mirror images of each other only needs to have one
   F3D file uploaded, to avoid duplication. It is the user's responsibility
   to flip the part as needed before printing in the slicer.
+* Use millimeter measurements throughout.
+
+## Standard Parameter Names
+
+For consistency across parts, where possible, please use the following names
+for various standard parameters (all units are millimeters):
+
+| Parameter Name | Definition |
+| --- | --- |
+| chamfer | Default chamber, typically 0.4mm |
+| extrusion_width | Extrusion width |
+| panel_thickness | Panel thickness, including foam tape and VHB as needed |
+| rail_width | Linear rail width |
+| tolerance | Tolerance added for good fit, typically 0.2mm |
+| z_belt_distance | Distance between the Z belts |
+| z_belt_width | Width of the Z belts |
 
 ## Design Tips
 
