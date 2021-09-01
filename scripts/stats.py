@@ -14,6 +14,10 @@ REPOS = {
     }
 }
 
+IGNORE_SUBSTRINGS = [
+    'Legacy_Brackets',
+]
+
 
 def detect_type(path: str) -> str:
     for repo_type in REPOS:
@@ -44,6 +48,13 @@ def analyze_repo(theirs: str, ours: str, repo_type: str):
         theirs_relative = theirs_full[len(theirs):]
         if theirs_relative.startswith(config['root'] + '/'):
             theirs_relative = theirs_relative[len(config['root'] + '/'):]
+        ignored = False
+        for pattern in IGNORE_SUBSTRINGS:
+            if pattern in theirs_relative:
+                ignored = True
+                break
+        if ignored:
+            continue
         ours_full = os.path.join(ours, theirs_relative)
         assert ours_full.endswith('.stl')
         ours_full_f3d = ours_full[:-len('.stl')] + '.f3d'
@@ -75,7 +86,7 @@ def analyze_repo(theirs: str, ours: str, repo_type: str):
     print()
     print('Low-hanging fruit:')
     print()
-    for stl, size in sorted(missing_by_size, key=lambda ss: ss[1])[:10]:
+    for stl, size in sorted(missing_by_size, key=lambda ss: ss[1])[:20]:
         print(f'{stl} [{size} bytes]')
 
     print()
