@@ -18,7 +18,11 @@ For inspiration as to what this could eventually become, take a look at the Fusi
   * Fillets and chamfers should have the same radius as the original
     part, but only within 0.05mm.
 * Including Voron logos and branding is optional, but preferred. All text should
-  remain editable - no vector text please.
+  remain editable - no vector text please. The Voron logo is available in
+  parametric F3D and rendered vector SVG formats in the `assets` folder.
+  The font used for branding is
+  [Play](https://fonts.google.com/specimen/Play?preview.text=VORON&preview.text_type=custom)
+  from Google Fonts.
 * User parameters should be used where possible, for anything the user
   is very likely to want to change (e.g. the length of an extrude for
   something like a panel thickness), or for values which are reused frequently
