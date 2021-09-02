@@ -29,6 +29,8 @@ def detect_type(path: str) -> str:
 def canonicalize(path: str) -> str:
     # B -> A
     path = path.replace('_b_', '_a_')
+    # panel clips, clip_6mm -> clip_3mm
+    path = path.replace('_clip_6mm', '_clip_3mm')
     return path
 
 
