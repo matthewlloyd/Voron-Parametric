@@ -41,6 +41,7 @@ for various standard parameters (all units are millimeters):
 
 | Parameter Name | Definition |
 | --- | --- |
+| ab_belt_width | Width of the AB belts |
 | chamfer | Default chamfer, typically 0.4mm |
 | extrusion_width | Extrusion width |
 | panel_thickness | Panel thickness, including foam tape and VHB as needed |
