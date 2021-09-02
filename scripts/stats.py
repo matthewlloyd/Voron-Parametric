@@ -4,6 +4,7 @@
 
 import os
 import pathlib
+import re
 import typer
 
 
@@ -30,7 +31,10 @@ def canonicalize(path: str) -> str:
     # B -> A
     path = path.replace('_b_', '_a_')
     # panel clips, clip_6mm -> clip_3mm
-    path = path.replace('_clip_6mm', '_clip_3mm')
+    path = path.replace('midspan_panel_clip_6mm_x3', 'midspan_panel_clip_3mm_x12')
+    path = path.replace('corner_panel_clip_6mm_x4', 'corner_panel_clip_3mm_x12')
+    # front idler tensioners are mirror images
+    path = path.replace('tensioner_right', 'tensioner_left')
     return path
 
 
