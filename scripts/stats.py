@@ -35,6 +35,8 @@ def canonicalize(path: str) -> str:
     path = path.replace('corner_panel_clip_6mm_x4', 'corner_panel_clip_3mm_x12')
     # front idler tensioners are mirror images
     path = path.replace('tensioner_right', 'tensioner_left')
+    # Z tensioners 9mm->6mm
+    path = path.replace('z_tensioner_x4_9mm', 'z_tensioner_x4_6mm')
     return path
 
 
