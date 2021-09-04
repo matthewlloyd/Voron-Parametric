@@ -105,14 +105,14 @@ workarounds:
   should stay separate into separate components: extrude will not join bodies
   from different components.
 
-## Progress (as of 2021-09-03)
+## Progress (as of 2021-09-04 2:02AM EDT)
 
-### Voron-2 (32/131, 24%)
+### Voron-2 (33/131, 25%)
 
-- :black_large_square: TEST_PRINTS (0/3, 0%)
+- :black_large_square: TEST_PRINTS (1/3, 33%)
   - :black_large_square: Filament Card Caddy 25.stl
   - :black_large_square: Filament Card.stl
-  - :black_large_square: Voron_Design_Cube_v7.stl
+  - :white_check_mark: Voron_Design_Cube_v7.stl
 - :black_large_square: VORON2.4 (32/128, 25%)
   - :black_large_square: Electronics_Compartment (0/15, 0%)
     - :black_large_square: DIN_Brackets (0/8, 0%)
