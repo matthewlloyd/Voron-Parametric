@@ -147,7 +147,7 @@ def render_to_markdown(repo_type, reconstructed, missing):
         is_complete = len(paths[path]['missing']) == 0
         line = '  ' * indent + '- ' + \
             (MARKDOWN_RECONSTRUCTED if is_complete else MARKDOWN_MISSING) \
-            + ' ' + file
+            + ' ' + (file[:-4] if file.endswith('.stl') else file)
         total_reconstructed = len(paths[path]["reconstructed"])
         total = len(paths[path]["missing"].union(paths[path]["reconstructed"]))
         percentage = total_reconstructed * 100. / total
@@ -159,7 +159,7 @@ def render_to_markdown(repo_type, reconstructed, missing):
             is_complete = leaf in paths[path]['reconstructed_leaf']
             line = '  ' * indent + '- ' + \
                 (MARKDOWN_RECONSTRUCTED if is_complete else MARKDOWN_MISSING) + \
-                ' ' + file
+                ' ' + (file[:-4] if file.endswith('.stl') else file)
             print(line)
 
 
