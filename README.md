@@ -105,6 +105,176 @@ workarounds:
   should stay separate into separate components: extrude will not join bodies
   from different components.
 
+## Progress (as of 2021-09-03)
+
+### Voron-2 (31/131, 24%)
+
+- :black_large_square: TEST_PRINTS (0/3, 0%)
+  - :black_large_square: Filament Card Caddy 25.stl
+  - :black_large_square: Filament Card.stl
+  - :black_large_square: Voron_Design_Cube_v7.stl
+- :black_large_square: VORON2.4 (31/128, 24%)
+  - :black_large_square: Electronics_Compartment (0/15, 0%)
+    - :black_large_square: DIN_Brackets (0/8, 0%)
+      - :black_large_square: duet_duex_bracket_x2.stl
+      - :black_large_square: lrs_psu_bracket_clip.stl
+      - :black_large_square: pcb_din_clip_x3.stl
+      - :black_large_square: ramps_bracket_x2.stl
+      - :black_large_square: raspberrypi_bracket.stl
+      - :black_large_square: rs25_psu_bracket_clip.stl
+      - :black_large_square: skr_1.3_1.4_bracket_x2.stl
+      - :black_large_square: skr_mini_e3_bracket_x2.stl
+    - :black_large_square: LCD_Module (0/4, 0%)
+      - :black_large_square: [a]_mini12864_case_hinge.stl
+      - :black_large_square: mini12864_case_front.stl
+      - :black_large_square: mini12864_case_rear.stl
+      - :black_large_square: mini12864_spacer.stl
+    - :black_large_square: Plug_Panel (0/3, 0%)
+      - :black_large_square: [a]_keystone_blank_insert.stl
+      - :black_large_square: plug_panel.stl
+      - :black_large_square: plug_panel_filtered_mains.stl
+  - :black_large_square: Exhaust_Filter (2/4, 50%)
+    - :white_check_mark: [a]_exhaust_filter_mount_x2.stl
+    - :black_large_square: [a]_filter_access_cover.stl
+    - :white_check_mark: exhaust_filter_grill.stl
+    - :black_large_square: exhaust_filter_housing.stl
+  - :black_large_square: Gantry (10/54, 19%)
+    - :white_check_mark: [a]_z_belt_clip_lower_x4.stl
+    - :white_check_mark: [a]_z_belt_clip_upper_x4.stl
+    - :black_large_square: z_chain_bottom_anchor.stl
+    - :black_large_square: z_chain_guide.stl
+    - :black_large_square: AB_Drive_Units (1/6, 17%)
+      - :black_large_square: [a]_cable_cover.stl
+      - :white_check_mark: [a]_z_chain_retainer_bracket_x2.stl
+      - :black_large_square: a_drive_frame_lower.stl
+      - :black_large_square: a_drive_frame_upper.stl
+      - :black_large_square: b_drive_frame_lower.stl
+      - :black_large_square: b_drive_frame_upper.stl
+    - :black_large_square: Front_Idlers (2/6, 33%)
+      - :white_check_mark: [a]_tensioner_left.stl
+      - :white_check_mark: [a]_tensioner_right.stl
+      - :black_large_square: front_idler_left_lower.stl
+      - :black_large_square: front_idler_left_upper.stl
+      - :black_large_square: front_idler_right_lower.stl
+      - :black_large_square: front_idler_right_upper.stl
+    - :black_large_square: X_Axis (5/35, 14%)
+      - :black_large_square: XY_Joints (0/8, 0%)
+        - :black_large_square: [a]_endstop_pod_hall_effect.stl
+        - :black_large_square: [a]_endstop_pod_microswitch.stl
+        - :black_large_square: [a]_xy_joint_cable_bridge_generic.stl
+        - :black_large_square: [a]_xy_joint_cable_bridge_igus.stl
+        - :black_large_square: xy_joint_left_lower.stl
+        - :black_large_square: xy_joint_left_upper.stl
+        - :black_large_square: xy_joint_right_lower.stl
+        - :black_large_square: xy_joint_right_upper.stl
+      - :black_large_square: X_Carriage (5/27, 19%)
+        - :white_check_mark: [a]_belt_clamp_x2.stl
+        - :black_large_square: [a]_blower_housing_front.stl
+        - :black_large_square: blower_housing_rear.stl
+        - :black_large_square: hotend_fan_mount.stl
+        - :white_check_mark: probe_retainer_bracket.stl
+        - :black_large_square: x_carriage_frame_left.stl
+        - :black_large_square: x_carriage_frame_right.stl
+        - :white_check_mark: x_carriage_pivot_block.stl
+        - :black_large_square: Bowden (0/5, 0%)
+          - :black_large_square: bowden_module_front.stl
+          - :black_large_square: bowden_module_rear_generic.stl
+          - :black_large_square: bowden_module_rear_igus.stl
+          - :black_large_square: bsp_adapter.stl
+          - :black_large_square: tl_collet_adapter.stl
+        - :black_large_square: Direct_Feed (2/8, 25%)
+          - :black_large_square: [a]_connector_cover.stl
+          - :black_large_square: [a]_guidler.stl
+          - :white_check_mark: [a]_latch.stl
+          - :black_large_square: chain_anchor_generic.stl
+          - :black_large_square: chain_anchor_igus.stl
+          - :black_large_square: extruder_body.stl
+          - :black_large_square: extruder_motor_plate.stl
+          - :white_check_mark: latch_shuttle.stl
+        - :black_large_square: Printheads (0/6, 0%)
+          - :black_large_square: E3D_V6 (0/2, 0%)
+            - :black_large_square: printhead_front_e3dv6.stl
+            - :black_large_square: printhead_rear_e3dv6.stl
+          - :black_large_square: Slice_Mosquito (0/2, 0%)
+            - :black_large_square: printhead_front_mosquito.stl
+            - :black_large_square: printhead_rear_mosquito.stl
+          - :black_large_square: TriangleLab_Dragon (0/2, 0%)
+            - :black_large_square: printhead_front_dragon.stl
+            - :black_large_square: printhead_rear_dragon.stl
+    - :black_large_square: Z_Joints (0/3, 0%)
+      - :black_large_square: z_joint_lower_x4.stl
+      - :black_large_square: z_joint_upper_hall_effect.stl
+      - :black_large_square: z_joint_upper_x4.stl
+  - :black_large_square: Panel_Mounting (10/12, 83%)
+    - :black_large_square: bottom_panel_clip_x4.stl
+    - :black_large_square: bottom_panel_hinge_x2.stl
+    - :white_check_mark: corner_panel_clip_3mm_x12.stl
+    - :white_check_mark: corner_panel_clip_6mm_x4.stl
+    - :white_check_mark: midspan_panel_clip_3mm_x12.stl
+    - :white_check_mark: midspan_panel_clip_6mm_x3.stl
+    - :white_check_mark: z_belt_cover_a_x2.stl
+    - :white_check_mark: z_belt_cover_b_x2.stl
+    - :white_check_mark: Front_Doors (4/4, 100%)
+      - :white_check_mark: door_hinge_x4.stl
+      - :white_check_mark: handle_a_x2.stl
+      - :white_check_mark: handle_b_x2.stl
+      - :white_check_mark: latch_x2.stl
+  - :black_large_square: Skirts (1/16, 6%)
+    - :white_check_mark: [a]_60mm_fan_blank_insert_x2.stl
+    - :black_large_square: [a]_belt_guard_a_x2.stl
+    - :black_large_square: [a]_belt_guard_b_x2.stl
+    - :black_large_square: side_fan_support_x2.stl
+    - :black_large_square: 250 (0/4, 0%)
+      - :black_large_square: front_rear_skirt_a_250_x2.stl
+      - :black_large_square: front_rear_skirt_b_250_x2.stl
+      - :black_large_square: side_skirt_a_250_x2.stl
+      - :black_large_square: side_skirt_b_250_x2.stl
+    - :black_large_square: 300 (0/4, 0%)
+      - :black_large_square: front_rear_skirt_a_300_x2.stl
+      - :black_large_square: front_rear_skirt_b_300_x2.stl
+      - :black_large_square: side_skirt_a_300_x2.stl
+      - :black_large_square: side_skirt_b_300_x2.stl
+    - :black_large_square: 350 (0/4, 0%)
+      - :black_large_square: front_rear_skirt_a_350_x2.stl
+      - :black_large_square: front_rear_skirt_b_350_x2.stl
+      - :black_large_square: side_skirt_a_350_x2.stl
+      - :black_large_square: side_skirt_b_350_x2.stl
+  - :black_large_square: Spool_Management (0/2, 0%)
+    - :black_large_square: bowen_retainer.stl
+    - :black_large_square: spool_holder.stl
+  - :black_large_square: Tools (1/2, 50%)
+    - :black_large_square: bed_hole_marking_template_x1_Rev2.stl
+    - :white_check_mark: rail_installation_guide_center_x2.stl
+  - :black_large_square: Z_Drive (2/11, 18%)
+    - :black_large_square: [a]_belt_tensioner_a_x2.stl
+    - :black_large_square: [a]_belt_tensioner_b_x2.stl
+    - :black_large_square: [a]_stopgap_80T_hubbed_gear.stl
+    - :white_check_mark: [a]_z_drive_baseplate_a_x2.stl
+    - :white_check_mark: [a]_z_drive_baseplate_b_x2.stl
+    - :black_large_square: z_drive_main_a_x2.stl
+    - :black_large_square: z_drive_main_b_x2.stl
+    - :black_large_square: z_drive_retainer_a_x2.stl
+    - :black_large_square: z_drive_retainer_b_x2.stl
+    - :black_large_square: z_motor_mount_a_x2.stl
+    - :black_large_square: z_motor_mount_b_x2.stl
+  - :white_check_mark: Z_Endstop (1/1, 100%)
+    - :white_check_mark: nozzle_probe.stl
+  - :white_check_mark: Z_Idlers (4/4, 100%)
+    - :white_check_mark: [a]_z_tensioner_x4_6mm.stl
+    - :white_check_mark: [a]_z_tensioner_x4_9mm.stl
+    - :white_check_mark: z_tensioner_bracket_a_x2.stl
+    - :white_check_mark: z_tensioner_bracket_b_x2.stl
+  - :black_large_square: ZipChain (0/7, 0%)
+    - :black_large_square: XY (0/3, 0%)
+      - :black_large_square: zipchain2_xy_end.stl
+      - :black_large_square: zipchain2_xy_link_a.stl
+      - :black_large_square: zipchain2_xy_link_b.stl
+    - :black_large_square: Z (0/4, 0%)
+      - :black_large_square: zipchain2_z_end.stl
+      - :black_large_square: zipchain2_z_link_a.stl
+      - :black_large_square: zipchain2_z_link_b.stl
+      - :black_large_square: zipchain2_z_link_b_locking.stl
+
 ## License
 
 All parts are licensed under the GPLv3. For the purposes of the GPL license:
