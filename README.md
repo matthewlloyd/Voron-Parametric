@@ -107,13 +107,13 @@ workarounds:
 
 ## Progress (as of 2021-09-03)
 
-### Voron-2 (31/131, 24%)
+### Voron-2 (32/131, 24%)
 
 - :black_large_square: TEST_PRINTS (0/3, 0%)
   - :black_large_square: Filament Card Caddy 25.stl
   - :black_large_square: Filament Card.stl
   - :black_large_square: Voron_Design_Cube_v7.stl
-- :black_large_square: VORON2.4 (31/128, 24%)
+- :black_large_square: VORON2.4 (32/128, 25%)
   - :black_large_square: Electronics_Compartment (0/15, 0%)
     - :black_large_square: DIN_Brackets (0/8, 0%)
       - :black_large_square: duet_duex_bracket_x2.stl
@@ -138,7 +138,7 @@ workarounds:
     - :black_large_square: [a]_filter_access_cover.stl
     - :white_check_mark: exhaust_filter_grill.stl
     - :black_large_square: exhaust_filter_housing.stl
-  - :black_large_square: Gantry (10/54, 19%)
+  - :black_large_square: Gantry (11/54, 20%)
     - :white_check_mark: [a]_z_belt_clip_lower_x4.stl
     - :white_check_mark: [a]_z_belt_clip_upper_x4.stl
     - :black_large_square: z_chain_bottom_anchor.stl
@@ -201,10 +201,10 @@ workarounds:
           - :black_large_square: TriangleLab_Dragon (0/2, 0%)
             - :black_large_square: printhead_front_dragon.stl
             - :black_large_square: printhead_rear_dragon.stl
-    - :black_large_square: Z_Joints (0/3, 0%)
+    - :black_large_square: Z_Joints (1/3, 33%)
       - :black_large_square: z_joint_lower_x4.stl
       - :black_large_square: z_joint_upper_hall_effect.stl
-      - :black_large_square: z_joint_upper_x4.stl
+      - :white_check_mark: z_joint_upper_x4.stl
   - :black_large_square: Panel_Mounting (10/12, 83%)
     - :black_large_square: bottom_panel_clip_x4.stl
     - :black_large_square: bottom_panel_hinge_x2.stl
