@@ -19,6 +19,9 @@ IGNORE_SUBSTRINGS = [
     'Legacy_Brackets',
 ]
 
+MARKDOWN_MISSING = ':black_large_square:'
+MARKDOWN_RECONSTRUCTED = ':white_check_mark:'
+
 
 def detect_type(path: str) -> str:
     for repo_type in REPOS:
@@ -102,15 +105,74 @@ def analyze_repo(theirs: str, ours: str, repo_type: str):
     percentage = total_stls_reconstructed * 100.0 / total_stls
     print(f'{total_stls_reconstructed}/{total_stls} ({percentage:.1f}%) reconstructed')
 
+    return reconstructed, missing
 
-def main(theirs: str = None, ours: str = None, repo_type: str = None):
+
+def render_to_markdown(repo_type, reconstructed, missing):
+    print('--------')
+    print('Markdown')
+    print('--------')
+    print()
+
+    total = len(reconstructed) + len(missing)
+    percentage = len(reconstructed) * 100.0 / total
+    print(f'### {repo_type} ({len(reconstructed)}/{total}, {percentage:.0f}%)')
+
+    print()
+    all_stls = set(reconstructed).union(set(missing))
+    paths = {}
+    for stl in sorted(all_stls):
+        path, file = os.path.split(stl)
+        path_parts = path.split('/')
+        for i in range(len(path_parts), 0, -1):
+            subpath = '/'.join(path_parts[:i])
+            if subpath not in paths:
+                paths[subpath] = {
+                    'reconstructed': set(),
+                    'missing': set(),
+                    'reconstructed_leaf': set(),
+                    'missing_leaf': set()
+                }
+            if stl in reconstructed:
+                if i == len(path_parts):
+                    paths[subpath]['reconstructed_leaf'].add(stl)
+                paths[subpath]['reconstructed'].add(stl)
+            else:
+                if i == len(path_parts):
+                    paths[subpath]['missing_leaf'].add(stl)
+                paths[subpath]['missing'].add(stl)
+    for path in sorted(paths.keys()):
+        indent = path.count('/')
+        p, file = os.path.split(path)
+        is_complete = len(paths[path]['missing']) == 0
+        line = '  ' * indent + '- ' + \
+            (MARKDOWN_RECONSTRUCTED if is_complete else MARKDOWN_MISSING) \
+            + ' ' + file
+        total_reconstructed = len(paths[path]["reconstructed"])
+        total = len(paths[path]["missing"].union(paths[path]["reconstructed"]))
+        percentage = total_reconstructed * 100. / total
+        line += f' ({total_reconstructed}/{total}, {percentage:.0f}%)'
+        print(line)
+        for leaf in sorted(paths[path]['reconstructed_leaf'].union(paths[path]['missing_leaf'])):
+            indent = leaf.count('/')
+            p, file = os.path.split(leaf)
+            is_complete = leaf in paths[path]['reconstructed_leaf']
+            line = '  ' * indent + '- ' + \
+                (MARKDOWN_RECONSTRUCTED if is_complete else MARKDOWN_MISSING) + \
+                ' ' + file
+            print(line)
+
+
+def main(theirs: str = None, ours: str = None, repo_type: str = None, markdown: bool = False):
     assert theirs is not None, f'Must specify --theirs'
     if repo_type is None:
         repo_type = detect_type(theirs)
     if ours is None:
         ours = f'./{repo_type}'
         assert os.path.exists(ours), f'Unable to guess path for "ours"'
-    analyze_repo(theirs, ours, repo_type)
+    reconstructed, missing = analyze_repo(theirs, ours, repo_type)
+    if markdown:
+        render_to_markdown(repo_type, reconstructed, missing)
 
 
 if __name__ == '__main__':
