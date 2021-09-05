@@ -105,15 +105,15 @@ workarounds:
   should stay separate into separate components: extrude will not join bodies
   from different components.
 
-## Progress (as of 2021-09-04 3:58PM EDT)
+## Progress (as of 2021-09-04 10:23PM EDT)
 
-### Voron-2 (35/131, 27%)
+### Voron-2 (38/131, 29%)
 
 - :black_large_square: TEST_PRINTS (1/3, 33%)
   - :black_large_square: Filament Card Caddy 25
   - :black_large_square: Filament Card
   - :white_check_mark: Voron_Design_Cube_v7
-- :black_large_square: VORON2.4 (34/128, 27%)
+- :black_large_square: VORON2.4 (37/128, 29%)
   - :black_large_square: Electronics_Compartment (0/15, 0%)
     - :black_large_square: DIN_Brackets (0/8, 0%)
       - :black_large_square: duet_duex_bracket_x2
@@ -138,7 +138,7 @@ workarounds:
     - :black_large_square: [a]_filter_access_cover
     - :white_check_mark: exhaust_filter_grill
     - :black_large_square: exhaust_filter_housing
-  - :black_large_square: Gantry (11/54, 20%)
+  - :black_large_square: Gantry (13/54, 24%)
     - :white_check_mark: [a]_z_belt_clip_lower_x4
     - :white_check_mark: [a]_z_belt_clip_upper_x4
     - :black_large_square: z_chain_bottom_anchor
@@ -201,9 +201,9 @@ workarounds:
           - :black_large_square: TriangleLab_Dragon (0/2, 0%)
             - :black_large_square: printhead_front_dragon
             - :black_large_square: printhead_rear_dragon
-    - :black_large_square: Z_Joints (1/3, 33%)
-      - :black_large_square: z_joint_lower_x4
-      - :black_large_square: z_joint_upper_hall_effect
+    - :white_check_mark: Z_Joints (3/3, 100%)
+      - :white_check_mark: z_joint_lower_x4
+      - :white_check_mark: z_joint_upper_hall_effect
       - :white_check_mark: z_joint_upper_x4
   - :black_large_square: Panel_Mounting (10/12, 83%)
     - :black_large_square: bottom_panel_clip_x4
@@ -242,8 +242,8 @@ workarounds:
   - :white_check_mark: Spool_Management (2/2, 100%)
     - :white_check_mark: bowen_retainer
     - :white_check_mark: spool_holder
-  - :black_large_square: Tools (1/2, 50%)
-    - :black_large_square: bed_hole_marking_template_x1_Rev2
+  - :white_check_mark: Tools (2/2, 100%)
+    - :white_check_mark: bed_hole_marking_template_x1_Rev2
     - :white_check_mark: rail_installation_guide_center_x2
   - :black_large_square: Z_Drive (2/11, 18%)
     - :black_large_square: [a]_belt_tensioner_a_x2
