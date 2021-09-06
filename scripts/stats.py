@@ -182,7 +182,7 @@ def render_to_markdown(repo_type, reconstructed, missing):
         print_markdown(line)
         for leaf in sorted(paths[path]['reconstructed_leaf'].union(paths[path]['missing_leaf'])):
             indent = leaf.count('/')
-            _, file = os.path.split(leaf)
+            leaf_root, file = os.path.split(leaf)
             is_complete = leaf in paths[path]['reconstructed_leaf']
             line = '  ' * indent + '- ' + \
                 (MARKDOWN_RECONSTRUCTED if is_complete else MARKDOWN_MISSING)
@@ -190,6 +190,10 @@ def render_to_markdown(repo_type, reconstructed, missing):
             file_root = file[:-4] if file.endswith('.stl') else file
             if is_complete:
                 file_f3d = reconstructed[leaf]
+                if os.path.islink(file_f3d):
+                    # follow symbolic links
+                    file_f3d = os.path.normpath(
+                        os.path.join(repo_type, leaf_root, os.readlink(file_f3d)))
                 # [Filament Card Caddy 25](Voron-2/TEST_PRINTS/Filament_Card_Caddy_25.f3d)
                 line += f'[{file_root}]({file_f3d})'
             else:
