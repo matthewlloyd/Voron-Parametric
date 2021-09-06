@@ -118,7 +118,7 @@ workarounds:
     - :black_large_square: DIN_Brackets (1/8, 12%)
       - :black_large_square: duet_duex_bracket_x2
       - :black_large_square: lrs_psu_bracket_clip
-      - :black_large_square: pcb_din_clip_x3
+      - :white_check_mark: pcb_din_clip_x3
       - :black_large_square: ramps_bracket_x2
       - :black_large_square: raspberrypi_bracket
       - :black_large_square: rs25_psu_bracket_clip
