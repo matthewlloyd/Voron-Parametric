@@ -105,24 +105,24 @@ workarounds:
   should stay separate into separate components: extrude will not join bodies
   from different components.
 
-## Progress (as of 2021-09-04 10:23PM EDT)
+## Progress (as of 2021-09-05 17:29PM EDT)
 
-### Voron-2 (38/131, 29%)
+### Voron-2 (43/131, 33%)
 
 - :black_large_square: TEST_PRINTS (1/3, 33%)
   - :black_large_square: Filament Card Caddy 25
   - :black_large_square: Filament Card
   - :white_check_mark: Voron_Design_Cube_v7
-- :black_large_square: VORON2.4 (37/128, 29%)
-  - :black_large_square: Electronics_Compartment (0/15, 0%)
-    - :black_large_square: DIN_Brackets (0/8, 0%)
+- :black_large_square: VORON2.4 (42/128, 33%)
+  - :black_large_square: Electronics_Compartment (1/15, 7%)
+    - :black_large_square: DIN_Brackets (1/8, 12%)
       - :black_large_square: duet_duex_bracket_x2
       - :black_large_square: lrs_psu_bracket_clip
       - :black_large_square: pcb_din_clip_x3
       - :black_large_square: ramps_bracket_x2
       - :black_large_square: raspberrypi_bracket
       - :black_large_square: rs25_psu_bracket_clip
-      - :black_large_square: skr_1.3_1.4_bracket_x2
+      - :white_check_mark: skr_1.3_1.4_bracket_x2
       - :black_large_square: skr_mini_e3_bracket_x2
     - :black_large_square: LCD_Module (0/4, 0%)
       - :black_large_square: [a]_mini12864_case_hinge
@@ -245,9 +245,9 @@ workarounds:
   - :white_check_mark: Tools (2/2, 100%)
     - :white_check_mark: bed_hole_marking_template_x1_Rev2
     - :white_check_mark: rail_installation_guide_center_x2
-  - :black_large_square: Z_Drive (2/11, 18%)
-    - :black_large_square: [a]_belt_tensioner_a_x2
-    - :black_large_square: [a]_belt_tensioner_b_x2
+  - :black_large_square: Z_Drive (6/11, 55%)
+    - :white_check_mark: [a]_belt_tensioner_a_x2
+    - :white_check_mark: [a]_belt_tensioner_b_x2
     - :black_large_square: [a]_stopgap_80T_hubbed_gear
     - :white_check_mark: [a]_z_drive_baseplate_a_x2
     - :white_check_mark: [a]_z_drive_baseplate_b_x2
@@ -255,8 +255,8 @@ workarounds:
     - :black_large_square: z_drive_main_b_x2
     - :black_large_square: z_drive_retainer_a_x2
     - :black_large_square: z_drive_retainer_b_x2
-    - :black_large_square: z_motor_mount_a_x2
-    - :black_large_square: z_motor_mount_b_x2
+    - :white_check_mark: z_motor_mount_a_x2
+    - :white_check_mark: z_motor_mount_b_x2
   - :white_check_mark: Z_Endstop (1/1, 100%)
     - :white_check_mark: nozzle_probe
   - :white_check_mark: Z_Idlers (4/4, 100%)
