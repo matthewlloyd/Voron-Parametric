@@ -105,17 +105,17 @@ workarounds:
   should stay separate into separate components: extrude will not join bodies
   from different components.
 
-## Progress (as of 2021-09-05 17:29PM EDT)
+## Progress (as of 2021-09-06 01:33AM EDT)
 
-### Voron-2 (43/131, 33%)
+### Voron-2 (46/131, 35%)
 
 - :black_large_square: TEST_PRINTS (1/3, 33%)
   - :black_large_square: Filament Card Caddy 25
   - :black_large_square: Filament Card
   - :white_check_mark: Voron_Design_Cube_v7
-- :black_large_square: VORON2.4 (42/128, 33%)
-  - :black_large_square: Electronics_Compartment (1/15, 7%)
-    - :black_large_square: DIN_Brackets (1/8, 12%)
+- :black_large_square: VORON2.4 (45/128, 35%)
+  - :black_large_square: Electronics_Compartment (2/15, 13%)
+    - :black_large_square: DIN_Brackets (2/8, 25%)
       - :black_large_square: duet_duex_bracket_x2
       - :black_large_square: lrs_psu_bracket_clip
       - :white_check_mark: pcb_din_clip_x3
@@ -138,7 +138,7 @@ workarounds:
     - :black_large_square: [a]_filter_access_cover
     - :white_check_mark: exhaust_filter_grill
     - :black_large_square: exhaust_filter_housing
-  - :black_large_square: Gantry (13/54, 24%)
+  - :black_large_square: Gantry (15/54, 28%)
     - :white_check_mark: [a]_z_belt_clip_lower_x4
     - :white_check_mark: [a]_z_belt_clip_upper_x4
     - :black_large_square: z_chain_bottom_anchor
@@ -157,7 +157,7 @@ workarounds:
       - :black_large_square: front_idler_left_upper
       - :black_large_square: front_idler_right_lower
       - :black_large_square: front_idler_right_upper
-    - :black_large_square: X_Axis (5/35, 14%)
+    - :black_large_square: X_Axis (7/35, 20%)
       - :black_large_square: XY_Joints (0/8, 0%)
         - :black_large_square: [a]_endstop_pod_hall_effect
         - :black_large_square: [a]_endstop_pod_microswitch
@@ -167,7 +167,7 @@ workarounds:
         - :black_large_square: xy_joint_left_upper
         - :black_large_square: xy_joint_right_lower
         - :black_large_square: xy_joint_right_upper
-      - :black_large_square: X_Carriage (5/27, 19%)
+      - :black_large_square: X_Carriage (7/27, 26%)
         - :white_check_mark: [a]_belt_clamp_x2
         - :black_large_square: [a]_blower_housing_front
         - :black_large_square: blower_housing_rear
@@ -182,12 +182,12 @@ workarounds:
           - :black_large_square: bowden_module_rear_igus
           - :black_large_square: bsp_adapter
           - :black_large_square: tl_collet_adapter
-        - :black_large_square: Direct_Feed (2/8, 25%)
+        - :black_large_square: Direct_Feed (4/8, 50%)
           - :black_large_square: [a]_connector_cover
           - :black_large_square: [a]_guidler
           - :white_check_mark: [a]_latch
-          - :black_large_square: chain_anchor_generic
-          - :black_large_square: chain_anchor_igus
+          - :white_check_mark: chain_anchor_generic
+          - :white_check_mark: chain_anchor_igus
           - :black_large_square: extruder_body
           - :black_large_square: extruder_motor_plate
           - :white_check_mark: latch_shuttle
