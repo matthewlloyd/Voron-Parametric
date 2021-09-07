@@ -15,16 +15,19 @@ REPOS = {
     'Voron-2': {
         'github': 'VoronDesign/Voron-2',
         'root': 'STLs',
+        'branch': 'Voron2.4',
     },
 
     'Voron-Trident': {
         'github': 'VoronDesign/Voron-Trident',
         'root': 'STLs',
+        'branch': 'main',
     },
 
     'Voron-0': {
         'github': 'VoronDesign/Voron-0',
         'root': 'STLs',
+        'branch': 'Voron0.1',
     },
 }
 
@@ -195,9 +198,19 @@ def render_to_markdown(repo_type, reconstructed, missing):
                     file_f3d = os.path.normpath(
                         os.path.join(repo_type, leaf_root, os.readlink(file_f3d)))
                 # [Filament Card Caddy 25](Voron-2/TEST_PRINTS/Filament_Card_Caddy_25.f3d)
-                line += f'[{file_root}]({file_f3d})'
+                line += f'[{file_root}]({file_f3d.replace(" ", "%20")})'
             else:
                 line += file_root
+            # add link to STL
+            links = []
+            links.append(
+                f'[stl](https://github.com/VoronDesign/{repo_type}'
+                f'/blob/{REPOS[repo_type]["branch"]}'
+                f'/{REPOS[repo_type]["root"]}'
+                f'/{leaf_root.replace(" ", "%20")}/{file_root.replace(" ", "%20")}.stl)')
+            if is_complete:
+                links.append(f'[f3d]({file_f3d.replace(" ", "%20")})')
+            line += ' (' + ', '.join(links) + ')'
             print_markdown(line)
     print_markdown('</details>')
 
