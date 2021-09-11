@@ -66,6 +66,11 @@ def canonicalize(path: str) -> str:
     path = path.replace('tensioner_right', 'tensioner_left')
     # Z tensioners 9mm->6mm
     path = path.replace('z_tensioner_x4_9mm', 'z_tensioner_x4_6mm')
+    # Side skirts, universally sized with 300mm provided
+    path = path.replace('/Skirts/250/', '/Skirts/300/')
+    path = path.replace('/Skirts/350/', '/Skirts/300/')
+    path = path.replace('skirt_a_250', 'skirt_a_300')
+    path = path.replace('skirt_a_350', 'skirt_a_300')
     return path
 
 
