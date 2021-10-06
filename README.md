@@ -1,5 +1,11 @@
 # The Parametric Voron
 
+_Note: due to recent events, various technical shortcomings with Voron printers,
+and inappropriate and irrational actions taken by the Voron team against a
+substantial number of dissenting community members expressing their right to
+free speech, including myself, I no longer recommend building printers of their
+design. I will be publishing a detailed article explaining why in the near future, which I will link to here._
+
 This repository contains Fusion 360 reconstructions of various printed parts from the Voron printers (https://vorondesign.com/). Unlike the CAD files provided by the Voron team, which are essentially just STEP files in F3D format, these files have full parametric design history turned on, and are easy to edit.
 
 This is a community effort and it may take months, or even years, to recreate the full set of parts. If you would like to contribute, feel free to open a pull request. Parts are organized per Voron release, with the same directory structure and naming conventions used by the original Voron parts.
