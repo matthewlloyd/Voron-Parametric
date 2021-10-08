@@ -33,9 +33,6 @@ REPOS = {
 
 IGNORE_SUBSTRINGS = [
     'Legacy_Brackets',
-    'Slice_Mosquito',
-    'Slice Mosquito',
-    'Mosquito_Toolhead',
 ]
 
 MARKDOWN_MISSING = ':black_large_square:'
